@@ -1,0 +1,85 @@
+
+2024-03-30 16:03:51,582 INFO [test123] [base_case.py (setup_class:15] - ==========登录功能测试开始==========
+2024-03-30 16:03:57,950 INFO [test123] [base_case.py (teardown_class:20] - ==========登录功能测试结束==========
+2024-03-30 16:34:59,277 INFO [test123] [base_case.py (setup_class:15] - ==========登录功能测试开始==========
+2024-03-30 16:35:05,672 INFO [test123] [base_case.py (teardown_class:20] - ==========登录功能测试结束==========
+2024-03-30 16:36:42,715 INFO [test123] [base_case.py (setup_class:15] - ==========登录功能测试开始==========
+2024-03-30 16:36:50,045 INFO [test123] [base_case.py (teardown_class:20] - ==========登录功能测试结束==========
+2024-03-30 16:41:11,985 INFO [test123] [base_case.py (setup_class:15] - ==========登录功能测试开始==========
+2024-03-30 16:41:19,231 INFO [test123] [base_case.py (teardown_class:20] - ==========登录功能测试结束==========
+2024-03-30 16:41:51,642 INFO [test123] [base_case.py (setup_class:15] - ==========登录功能测试开始==========
+2024-03-30 16:41:59,010 INFO [test123] [base_case.py (teardown_class:20] - ==========登录功能测试结束==========
+2024-03-30 16:42:23,250 INFO [test123] [base_case.py (setup_class:15] - ==========登录功能测试开始==========
+2024-03-30 16:42:30,560 INFO [test123] [base_case.py (teardown_class:20] - ==========登录功能测试结束==========
+2024-03-30 17:03:02,169 INFO [test123] [base_case.py (setup_class:15] - ==========登录功能测试开始==========
+2024-03-30 17:03:06,106 INFO [test123] [base_case.py (teardown_class:20] - ==========登录功能测试结束==========
+2024-03-30 17:04:58,324 INFO [test123] [base_case.py (setup_class:15] - ==========登录功能测试开始==========
+2024-03-30 17:05:02,411 INFO [test123] [base_case.py (teardown_class:20] - ==========登录功能测试结束==========
+2024-03-30 17:06:28,645 INFO [test123] [base_case.py (setup_class:15] - ==========登录功能测试开始==========
+2024-03-30 17:06:32,953 INFO [test123] [base_case.py (teardown_class:20] - ==========登录功能测试结束==========
+2024-03-30 17:06:50,362 INFO [test123] [base_case.py (setup_class:15] - ==========登录功能测试开始==========
+2024-03-30 17:06:58,700 INFO [test123] [base_case.py (teardown_class:20] - ==========登录功能测试结束==========
+2024-03-30 19:29:37,137 INFO [test123] [base_case.py (setup_class:15] - ==========登录功能测试开始==========
+2024-03-30 19:29:41,097 INFO [test123] [base_case.py (teardown_class:20] - ==========登录功能测试结束==========
+2024-03-30 21:11:13,059 INFO [test123] [base_case.py (setup_class:15] - ==========登录功能测试开始==========
+2024-03-30 21:11:17,304 INFO [test123] [base_case.py (teardown_class:20] - ==========登录功能测试结束==========
+2024-03-30 21:13:16,091 INFO [test123] [base_case.py (setup_class:15] - ==========登录功能测试开始==========
+2024-03-30 21:13:20,308 INFO [test123] [base_case.py (teardown_class:20] - ==========登录功能测试结束==========
+2024-03-30 21:13:55,482 INFO [test123] [base_case.py (setup_class:15] - ==========登录功能测试开始==========
+2024-03-30 21:13:57,157 DEBUG [test123] [base_page.py (wait_element_is_loaded:125] - 在base页面,操作时,等待('id', 'kw')元素【成功】
+2024-03-30 21:13:58,244 DEBUG [test123] [base_page.py (send_keys:153] - 在base页面,操作时,对('id', 'kw')元素输入内容章子怡【成功】
+2024-03-30 21:13:58,292 DEBUG [test123] [base_page.py (wait_element_is_clickable:94] - 在base页面,操作时,等待('id', 'su')元素【成功】
+2024-03-30 21:13:59,332 DEBUG [test123] [base_page.py (click_element:188] - 在base页面,操作时,点击('id', 'su')元素【成功】
+2024-03-30 21:14:01,644 INFO [test123] [base_case.py (teardown_class:20] - ==========登录功能测试结束==========
+2024-03-30 21:17:03,087 INFO [test123] [base_case.py (setup_class:15] - ==========登录功能测试开始==========
+2024-03-30 21:17:04,812 DEBUG [test123] [base_page.py (wait_element_is_loaded:125] - 在base页面,操作时,等待('id', 'kw')元素【成功】
+2024-03-30 21:17:05,903 DEBUG [test123] [base_page.py (send_keys:153] - 在base页面,操作时,对('id', 'kw')元素输入内容章子怡【成功】
+2024-03-30 21:17:05,930 DEBUG [test123] [base_page.py (wait_element_is_clickable:94] - 在base页面,操作时,等待('id', 'su')元素【成功】
+2024-03-30 21:17:06,976 DEBUG [test123] [base_page.py (click_element:188] - 在base页面,操作时,点击('id', 'su')元素【成功】
+2024-03-30 21:17:10,118 INFO [test123] [base_case.py (teardown_class:20] - ==========登录功能测试结束==========
+2024-03-30 21:45:27,730 INFO [test123] [base_case.py (setup_class:15] - ==========登录功能测试开始==========
+2024-03-30 21:45:29,473 DEBUG [test123] [base_page.py (wait_element_is_loaded:134] - 在base页面,操作时,等待('id', 'kw')元素【成功】
+2024-03-30 21:45:30,564 DEBUG [test123] [base_page.py (send_keys:162] - 在base页面,操作时,对('id', 'kw')元素输入内容章子怡【成功】
+2024-03-30 21:45:30,593 DEBUG [test123] [base_page.py (wait_element_is_clickable:103] - 在base页面,操作时,等待('id', 'su')元素【成功】
+2024-03-30 21:45:31,635 DEBUG [test123] [base_page.py (click_element:197] - 在base页面,操作时,点击('id', 'su')元素【成功】
+2024-03-30 21:45:33,945 INFO [test123] [base_case.py (teardown_class:20] - ==========登录功能测试结束==========
+2024-03-30 21:46:00,929 INFO [test123] [base_case.py (setup_class:15] - ==========登录功能测试开始==========
+2024-03-30 21:46:02,558 DEBUG [test123] [base_page.py (wait_element_is_loaded:134] - 在base页面,操作时,等待('id', 'kw')元素【成功】
+2024-03-30 21:46:03,654 DEBUG [test123] [base_page.py (send_keys:162] - 在base页面,操作时,对('id', 'kw')元素输入内容章子怡【成功】
+2024-03-30 21:46:03,683 DEBUG [test123] [base_page.py (wait_element_is_clickable:103] - 在base页面,操作时,等待('id', 'su')元素【成功】
+2024-03-30 21:46:04,724 DEBUG [test123] [base_page.py (click_element:197] - 在base页面,操作时,点击('id', 'su')元素【成功】
+2024-03-30 21:46:08,876 INFO [test123] [base_case.py (teardown_class:20] - ==========登录功能测试结束==========
+2024-03-30 22:09:01,802 INFO [test123] [base_case.py (setup_class:15] - ==========登录功能测试开始==========
+2024-03-30 22:09:06,055 INFO [test123] [base_case.py (teardown_class:20] - ==========登录功能测试结束==========
+2024-03-30 22:12:18,073 INFO [test123] [base_case.py (setup_class:15] - ==========登录功能测试开始==========
+2024-03-30 22:12:22,850 INFO [test123] [base_case.py (teardown_class:20] - ==========登录功能测试结束==========
+2024-03-30 22:17:05,893 INFO [test123] [base_case.py (setup_class:15] - ==========登录功能测试开始==========
+2024-03-30 22:17:07,537 DEBUG [test123] [base_page.py (wait_element_is_loaded:134] - 在base页面,操作时,等待('id', 'kw')元素【成功】
+2024-03-30 22:17:08,630 DEBUG [test123] [base_page.py (send_keys:162] - 在base页面,操作时,对('id', 'kw')元素输入内容章子怡【成功】
+2024-03-30 22:17:08,659 DEBUG [test123] [base_page.py (wait_element_is_clickable:103] - 在base页面,操作时,等待('id', 'su')元素【成功】
+2024-03-30 22:17:09,707 DEBUG [test123] [base_page.py (click_element:197] - 在base页面,操作时,点击('id', 'su')元素【成功】
+2024-03-30 22:17:13,865 INFO [test123] [base_case.py (teardown_class:20] - ==========登录功能测试结束==========
+2024-03-30 23:02:48,698 INFO [test123] [base_case.py (setup_class:15] - ==========登录功能测试开始==========
+2024-03-30 23:02:50,361 DEBUG [test123] [base_page.py (wait_element_is_loaded:134] - 在base页面,操作时,等待('id', 'kw')元素【成功】
+2024-03-30 23:02:51,449 DEBUG [test123] [base_page.py (send_keys:162] - 在base页面,操作时,对('id', 'kw')元素输入内容章子怡【成功】
+2024-03-30 23:02:51,478 DEBUG [test123] [base_page.py (wait_element_is_clickable:103] - 在base页面,操作时,等待('id', 'su')元素【成功】
+2024-03-30 23:02:52,525 DEBUG [test123] [base_page.py (click_element:197] - 在base页面,操作时,点击('id', 'su')元素【成功】
+2024-03-30 23:02:55,747 INFO [test123] [base_case.py (teardown_class:20] - ==========登录功能测试结束==========
+2024-03-30 23:04:51,089 INFO [test123] [base_case.py (setup_class:15] - ==========登录功能测试开始==========
+2024-03-30 23:04:52,946 DEBUG [test123] [base_page.py (wait_element_is_loaded:134] - 在base页面,操作时,等待('id', 'kw')元素【成功】
+2024-03-30 23:04:54,049 DEBUG [test123] [base_page.py (send_keys:162] - 在base页面,操作时,对('id', 'kw')元素输入内容章子怡【成功】
+2024-03-30 23:04:54,075 DEBUG [test123] [base_page.py (wait_element_is_clickable:103] - 在base页面,操作时,等待('id', 'su')元素【成功】
+2024-03-30 23:04:55,118 DEBUG [test123] [base_page.py (click_element:197] - 在base页面,操作时,点击('id', 'su')元素【成功】
+2024-03-30 23:04:58,248 INFO [test123] [base_case.py (teardown_class:20] - ==========登录功能测试结束==========
+2024-03-31 12:39:01,712 INFO [test123] [base_case.py (setup_class:15] - ==========登录功能测试开始==========
+2024-03-31 12:39:03,453 DEBUG [test123] [base_page.py (wait_element_is_loaded:134] - 在base页面,操作时,等待('id', 'kw')元素【成功】
+2024-03-31 12:39:04,566 DEBUG [test123] [base_page.py (send_keys:162] - 在base页面,操作时,对('id', 'kw')元素输入内容章子怡【成功】
+2024-03-31 12:39:04,596 DEBUG [test123] [base_page.py (wait_element_is_clickable:103] - 在base页面,操作时,等待('id', 'su')元素【成功】
+2024-03-31 12:39:05,653 DEBUG [test123] [base_page.py (click_element:197] - 在base页面,操作时,点击('id', 'su')元素【成功】
+2024-03-31 12:39:08,881 INFO [test123] [base_case.py (teardown_class:20] - ==========登录功能测试结束==========
+2024-03-31 12:40:59,656 INFO [test123] [base_case.py (setup_class:15] - ==========登录功能测试开始==========
+2024-03-31 12:41:01,470 DEBUG [test123] [base_page.py (wait_element_is_loaded:134] - 在base页面,操作时,等待('id', 'kw')元素【成功】
+2024-03-31 12:41:02,563 DEBUG [test123] [base_page.py (send_keys:162] - 在base页面,操作时,对('id', 'kw')元素输入内容章子怡【成功】
+2024-03-31 12:41:02,590 DEBUG [test123] [base_page.py (wait_element_is_clickable:103] - 在base页面,操作时,等待('id', 'su')元素【成功】
+2024-03-31 12:41:03,635 DEBUG [test123] [base_page.py (click_element:197] - 在base页面,操作时,点击('id', 'su')元素【成功】
+2024-03-31 12:41:06,781 INFO [test123] [base_case.py (teardown_class:20] - ==========登录功能测试结束==========

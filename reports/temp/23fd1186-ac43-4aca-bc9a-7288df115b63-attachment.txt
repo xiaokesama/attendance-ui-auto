@@ -1,0 +1,6 @@
+[32mINFO    [0m test123:base_case.py:15 ==========登录功能测试开始==========
+[35mDEBUG   [0m test123:base_page.py:134 在base页面,操作时,等待('id', 'kw')元素【成功】
+[35mDEBUG   [0m test123:base_page.py:162 在base页面,操作时,对('id', 'kw')元素输入内容章子怡【成功】
+[35mDEBUG   [0m test123:base_page.py:103 在base页面,操作时,等待('id', 'su')元素【成功】
+[35mDEBUG   [0m test123:base_page.py:197 在base页面,操作时,点击('id', 'su')元素【成功】
+[32mINFO    [0m test123:base_case.py:20 ==========登录功能测试结束==========
