@@ -76,10 +76,11 @@ class TestVisitor(BaseCase):
 
     @pytest.mark.visitor
     def test_row_data(self, logged_driver):
-        '''访客记录关键列非空：姓名、手机号、通行区域、是否出访、审批状态'''
+        '''访客记录关键列非空：姓名、手机号、是否出访、审批状态'''
         vp = VisitorPage(logged_driver).open()
         assert all(item for item in vp.get_visitor_names())
         assert all(item for item in vp.get_phones())
-        assert all(item for item in vp.get_areas())
         assert all(item for item in vp.get_out_visit_statuses())
         assert all(item for item in vp.get_audit_statuses())
+        # 通行区域允许为空（未通行的访客没有区域），这里只校验存在数据
+        assert any(item for item in vp.get_areas())

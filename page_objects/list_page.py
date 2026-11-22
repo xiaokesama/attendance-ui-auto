@@ -165,3 +165,13 @@ class ListPage(BasePage):
         locator = (By.XPATH, loc.toolbar_btn_tpl.format(name))
         self.wait_element_is_clickable(locator, '点击操作区按钮{}'.format(name)).click_element()
         return self
+
+    def is_toolbar_button_enabled(self, name):
+        '''
+        判断操作区按钮是否可用（没有 disabled 属性即为可用）
+        :param name:按钮文案 str
+        :return:bool
+        '''
+        locator = (By.XPATH, loc.toolbar_btn_tpl.format(name))
+        disabled = self.wait_element_is_visible(locator, '读取按钮{}状态'.format(name)).get_element_attr('disabled')
+        return disabled is None

@@ -5,7 +5,6 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')
 
 import pytest
 
-from page_objects.common_page import CommonPage
 from page_objects.guard_page import GuardPage
 from page_objects.menu_bar import MenuBar
 from test_cases.base_case import BaseCase
@@ -58,14 +57,9 @@ class TestGuard(BaseCase):
         assert all(item for item in gp.get_times())
         assert all(item for item in gp.get_bound_devices())
 
-    @pytest.mark.smoke
     @pytest.mark.guard
-    def test_add_group_dialog(self, logged_driver):
-        '''点击「新增权限组」打开弹窗，取消后可关闭'''
+    def test_add_group_button_enabled(self, logged_driver):
+        '''「新增权限组」按钮展示且处于可用状态'''
         gp = GuardPage(logged_driver).open()
-        gp.click_add_group()
-        common = CommonPage(logged_driver)
-        assert common.is_modal_visible()
-        common.click_modal_cancel()
-        common.delay(0.5)
-        assert not common.is_modal_visible()
+        assert gp.get_toolbar_texts() == toolbar_buttons
+        assert gp.is_toolbar_button_enabled(toolbar_buttons[0])

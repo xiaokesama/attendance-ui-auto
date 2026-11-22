@@ -9,7 +9,12 @@ from page_objects.examine_page import ExaminePage
 from page_objects.menu_bar import MenuBar
 from page_locators.list_page_locator import ListPageLocators as list_loc
 from test_cases.base_case import BaseCase
-from test_data.examine_data import has_search_area, table_headers
+from test_data.examine_data import (
+    pagination_expected,
+    query_button_expected,
+    table_headers,
+    toolbar_expected,
+)
 
 
 class TestExamine(BaseCase):
@@ -26,12 +31,12 @@ class TestExamine(BaseCase):
         assert not missing, '我的申请缺少表头：{}，实际：{}'.format(missing, actual)
 
     @pytest.mark.examine
-    def test_no_search_area(self, logged_driver):
-        '''我的申请页没有查询区与分页，只有列表'''
+    def test_no_query_and_toolbar(self, logged_driver):
+        '''我的申请页是纯列表：没有查询按钮、操作区按钮和分页'''
         ep = ExaminePage(logged_driver).open()
-        assert has_search_area is False
-        assert ep.is_element_exist(list_loc.search_wrapper_loc, timeout=2) is False
-        assert ep.is_element_exist(list_loc.pagination_loc, timeout=2) is False
+        assert ep.is_element_exist(list_loc.query_btn_loc, timeout=2) is query_button_expected
+        assert ep.is_element_exist(list_loc.toolbar_loc, timeout=2) is toolbar_expected
+        assert ep.is_element_exist(list_loc.pagination_loc, timeout=2) is pagination_expected
 
     @pytest.mark.examine
     def test_empty_state(self, logged_driver):

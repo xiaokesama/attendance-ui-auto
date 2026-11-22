@@ -10,10 +10,11 @@ class ListPageLocators:
     reset_btn_tpl = "//span[contains(text(),'重置')]/ancestor::button[1]"
 
     # 按表单项标签定位下拉框，如 设备状态 / 是否出访
+    # 用 [1] 限定第一个匹配项，避免命中表格或分页区中的其他下拉
     select_by_label_tpl = (
-        "//div[contains(@class,'table-page-search-wrapper')]"
+        "(//div[contains(@class,'table-page-search-wrapper')]"
         "//div[contains(@class,'ant-form-item')][.//label[contains(text(),'{}')]]"
-        "//div[contains(@class,'ant-select-selection')]"
+        "//div[contains(@class,'ant-select-selection')])[1]"
     )
     # 下拉选项
     option_loc = (By.CSS_SELECTOR, '.ant-select-dropdown-menu-item')
