@@ -7,11 +7,13 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 TEST_CASE_DIR = os.path.join(BASE_DIR, 'test_cases')
 
 # 项目域名
-PROJECT_HOST= 'http://localhost:8000'
+PROJECT_HOST= 'http://172.168.80.102'
 
 # url
 INTERFACE_URL = {
-    'login': '/login/',
+    'login': '/user/login',
+    'dashboard': '/dashboard/analysis',
+    'person': '/isystem/depart',
 }
 
 # 日志配置
@@ -38,3 +40,7 @@ ERROR_SCREENSHOT_PATH = os.path.join(BASE_DIR, 'screen_shot')
 # 测试账户信息
 TEST_NORMAL_USERNAME = '13845621562'
 TEST_NORMAL_PASSWORD = '123456'
+
+# 智元云联测试账户信息
+TEST_ADMIN_USERNAME = 'admin'
+TEST_ADMIN_PASSWORD = '123456'

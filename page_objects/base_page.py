@@ -355,6 +355,100 @@ class BasePage:
                 json_s = json_s.replace('#{}#'.format(arg), str(value))
         return json_s
 
+    def wait_element_is_invisible(self,locator,action='',**kwargs):
+        '''
+        等待元素不可见/消失
+        :param locator:定位信息 tuple(by,expression)
+        :param action:操作说明 str
+        :param kwargs:输入参数 timeout等待时间,poll_frequency轮询时间
+        :return:page_object
+        '''
+        self.locator = locator
+        self.action = action
+        try:
+            # 超时时间
+            timeout = kwargs.get('timeout', settings.DEFAULT_TIMEOUT)
+            # 轮询时间
+            poll_frequency = kwargs.get('poll_frequency', 0.5)
+            WebDriverWait(self.driver, timeout, poll_frequency).until(
+                EC.invisibility_of_element_located(locator))
+        except Exception as e:
+            # 出错计入日志
+            self.logger.exception("在{},{}操作时,等待{}元素消失【失败】".format(self.name, action, locator))
+            # 截图
+            self.get_page_screenshot(action)
+            raise e
+        else:
+            # 成功计入日志
+            self.logger.debug("在{},{}操作时,等待{}元素消失【成功】".format(self.name, action, locator))
+            return self
+
+    def find_elements(self,locator,action=''):
+        '''
+        查找多个元素，找不到时返回空列表（不抛异常）
+        :param locator:定位信息 tuple(by,expression)
+        :param action:操作说明 str
+        :return:list[WebElement]
+        '''
+        self.locator = locator
+        self.action = action
+        try:
+            elements = self.driver.find_elements(*locator)
+        except Exception as e:
+            # 出错计入日志
+            self.logger.exception("在{},{}操作时,查找{}元素列表【失败】".format(self.name, action, locator))
+            # 截图
+            self.get_page_screenshot(action)
+            raise e
+        else:
+            # 成功计入日志
+            self.logger.debug(
+                "在{},{}操作时,查找{}元素列表【成功】,数量：{}".format(self.name, action, locator, len(elements))
+            )
+            return elements
+        finally:
+            self._clear_cache()
+
+    def get_elements_text(self,locator,action=''):
+        '''
+        获取多个元素的文本
+        :param locator:定位信息 tuple(by,expression)
+        :param action:操作说明 str
+        :return:list[str]
+        '''
+        elements = self.find_elements(locator, action)
+        return [element.text.strip() for element in elements]
+
+    def is_element_exist(self,locator,timeout=2):
+        '''
+        判断元素是否存在，存在返回True，不存在返回False（不抛异常）
+        :param locator:定位信息 tuple(by,expression)
+        :param timeout:等待时间 int
+        :return:bool
+        '''
+        try:
+            WebDriverWait(self.driver, timeout, 0.5).until(EC.presence_of_element_located(locator))
+        except Exception:
+            self.logger.debug("判断{}元素是否存在：不存在".format(locator))
+            return False
+        else:
+            self.logger.debug("判断{}元素是否存在：存在".format(locator))
+            return True
+
+    def get_current_url(self):
+        '''
+        获取当前页面url
+        :return:str
+        '''
+        return self.driver.current_url
+
+    def get_title(self):
+        '''
+        获取当前页面标题
+        :return:str
+        '''
+        return self.driver.title
+
     def _clear_cache(self):
         '''
         清除缓存
